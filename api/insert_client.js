@@ -1,8 +1,10 @@
-const express = require('express');
 const pool = require('../db'); // Importar el pool de conexiones
-const router = express.Router();
 
-router.post('/insert_client', async (req, res) => {
+module.exports = async (req, res) => {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Método no permitido' });
+  }
+
   const { nombre, apellido_paterno, apellido_materno, sexo, edad, celular, email, sucursal, contraseña } = req.body;
 
   if (!/^\S+@\S+\.\S+$/.test(email)) {
@@ -20,6 +22,4 @@ router.post('/insert_client', async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Error al almacenar el cliente', error: error.message });
   }
-});
-
-module.exports = router;
+};

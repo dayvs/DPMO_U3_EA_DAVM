@@ -1,22 +1,22 @@
 {
-    "name": "api-rest",
-    "version": "1.0.0",
-    "description": "API REST para operaciones CRUD con MySQL",
-    "main": "index.js",
-    "scripts": {
-      "start": "node index.js"
-    },
-    "dependencies": {
-      "express": "^4.18.2",
-      "mysql2": "^3.3.3"
-    },
-    "keywords": [
-      "api",
-      "nodejs",
-      "mysql",
-      "crud"
-    ],
-    "author": "David Alberto Villagran Muñoz",
-    "license": "MIT"
-  }
-  
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "API REST para operaciones CRUD con MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.3.3",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "mysql",
+    "crud"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT"
+}

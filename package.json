@@ -11,6 +11,9 @@
     "mysql2": "^3.3.3",
     "dotenv": "^16.3.1"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [
     "api",
     "nodejs",

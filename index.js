@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+require('dotenv').config(); // Cargar variables de entorno
+
 app.use(express.json()); // Middleware para parsear JSON
 
 // Rutas de la API
@@ -16,5 +18,5 @@ app.use('/api', deleteClient);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en el puerto ${PORT}`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });

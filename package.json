@@ -1,24 +1,16 @@
 {
   "name": "dpmo_u3_ea_davm",
   "version": "1.0.0",
-  "description": "API REST para operaciones CRUD con MySQL",
+  "description": "API REST para operaciones CRUD con PostgreSQL",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [
-    "api",
-    "nodejs",
-    "mysql",
-    "crud"
-  ],
-  "author": "David Alberto Villagrán Muñoz",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "dpmo_u3_ea_davm": "file:",
     "express": "^4.21.1",
-    "mysql2": "^3.11.5"
+    "pg": "^8.11.0"
   }
 }

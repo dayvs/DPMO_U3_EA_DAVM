@@ -6,8 +6,8 @@ router.delete('/delete_client', async (req, res) => {
   const { id_cliente } = req.body;
 
   try {
-    const [result] = await pool.execute(
-      'DELETE FROM tbl_clientes WHERE id_cliente = ?',
+    await pool.query(
+      'DELETE FROM tbl_clientes WHERE id_cliente = $1',
       [id_cliente]
     );
 
